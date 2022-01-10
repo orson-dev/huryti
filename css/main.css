@@ -238,6 +238,64 @@ header nav #logo {
   height: 63px;
   background-size: cover;
 }
+header #options a.btn {
+  position: relative;
+  color: transparent;
+}
+header #options a.btn:after {
+  content: "Contact us";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 60%;
+  width: 70%;
+  z-index: 2;
+  display: inline-block;
+  padding: 0.5rem 1.1em 0.5em 1em;
+  border-radius: 2.5em;
+  border: none;
+  outline: 0;
+  font-weight: bold;
+  border-bottom-left-radius: 0 !important;
+  color: #FAFAF5;
+}
+@media only screen and (min-width: 1024px) {
+  header #options a.btn:after {
+    border-radius: 5em;
+  }
+}
+header #options a.btn:before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  padding: 0.5rem 1.1em 0.5em 1em;
+  border-radius: 2.5em;
+  border: none;
+  outline: 0;
+  font-weight: bold;
+  border-bottom-left-radius: 0 !important;
+  background-color: #142033;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  height: 60%;
+  width: 70%;
+  transform: scale(0);
+  transform-origin: left bottom;
+  transition: transform 300ms;
+}
+@media only screen and (min-width: 1024px) {
+  header #options a.btn:before {
+    border-radius: 5em;
+  }
+}
+header #options a.btn:hover {
+  position: relative;
+  color: transparent;
+}
+header #options a.btn:hover:before {
+  transform: scale(1);
+}
 header #hero {
   -webkit-box-shadow: 40px 40px 50px 5px rgba(0, 0, 0, 0.25);
   box-shadow: 40px 40px 50px 5px rgba(0, 0, 0, 0.25);
@@ -394,6 +452,17 @@ header #hero article:last-of-type {
   }
 }
 
+@keyframes Animation {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 30% 300%;
+  }
+  100% {
+    background-position: 300% 30%;
+  }
+}
 #intro article {
   display: flex;
   flex-direction: column;
@@ -516,9 +585,19 @@ header #hero article:last-of-type {
   border-bottom: solid transparent 2px;
   text-align: center;
 }
+#industries a.tab:after {
+  transform: scaleX(0);
+  display: block;
+  height: 0.2em;
+  content: "";
+  border-bottom: solid 3px #2E9942;
+  transition: transform 300ms ease;
+}
 #industries a.tab.active {
   color: #FAFAF5;
-  border-bottom: solid #2E9942 2px;
+}
+#industries a.tab.active:after {
+  transform: scaleX(1);
 }
 #industries a.tab:hover {
   color: #FAFAF5;
@@ -782,6 +861,43 @@ header #hero article:last-of-type {
   background-size: 100%;
   background-position: center;
   height: 50vmax;
+  position: relative;
+}
+#map article:last-of-type:before {
+  content: "\"A key part in Crown Prince Mohammed Bin Salman's Vision 2030, aims for tourism to be the second largest contributor to GDP after oil and gas by 2030\"";
+  display: block;
+  position: absolute;
+  font-size: 0.8rem;
+  width: 40%;
+  right: 0;
+  top: 10%;
+  display: inline-block;
+  padding: 0.5rem 1.1em 0.5em 1em;
+  border-radius: 2.5em;
+  border: none;
+  outline: 0;
+  font-weight: bold;
+  border-bottom-left-radius: 0 !important;
+  padding: 2em;
+  font-weight: 500;
+  border-radius: 2.5em !important;
+  border-bottom-left-radius: 0.2em !important;
+  background-color: #FAFAF5;
+}
+@media only screen and (min-width: 640px) {
+  #map article:last-of-type:before {
+    top: 30%;
+  }
+}
+@media only screen and (min-width: 1920px) {
+  #map article:last-of-type:before {
+    top: 37%;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  #map article:last-of-type:before {
+    border-radius: 5em;
+  }
 }
 @media only screen and (min-width: 1024px) {
   #map article:last-of-type {
