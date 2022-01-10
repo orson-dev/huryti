@@ -1,2 +1,1 @@
-# huryti
-LP
+Huryti Proj
