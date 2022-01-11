@@ -960,7 +960,9 @@ header #hero article:last-of-type {
     width: 60%;
     background-size: contain;
     background-position: right top;
+
     background-image: url("../assets/images/bg.blue.right.png");
+
   }
 }
 #values > div:last-of-type {

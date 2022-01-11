@@ -954,7 +954,9 @@ header #hero article:last-of-type {
     width: 60%;
     background-size: contain;
     background-position: left top;
+
     background-image: url("../assets/images/bg.blue.left.png");
+
   }
 }
 #values > div:last-of-type {
