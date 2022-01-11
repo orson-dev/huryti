@@ -1,6 +1,996 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/js/animations.js":
+/*!******************************!*\
+  !*** ./src/js/animations.js ***!
+  \******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "english": () => (/* binding */ english),
+/* harmony export */   "arabic": () => (/* binding */ arabic)
+/* harmony export */ });
+var english = [{
+  "v": "5.6.5",
+  "fr": 24,
+  "ip": 0,
+  "op": 96,
+  "w": 4200,
+  "h": 3238,
+  "nm": "Freelancer Web Screens",
+  "ddd": 0,
+  "assets": [{
+    "id": "image_0",
+    "w": 4576,
+    "h": 3238,
+    "u": "assets/images/sprites/",
+    "p": "img_0.png",
+    "e": 0
+  }, {
+    "id": "image_1",
+    "w": 4576,
+    "h": 3238,
+    "u": "assets/images/sprites/",
+    "p": "img_1.png",
+    "e": 0
+  }, {
+    "id": "image_2",
+    "w": 4576,
+    "h": 3238,
+    "u": "assets/images/sprites/",
+    "p": "img_2.png",
+    "e": 0
+  }],
+  "layers": [{
+    "ddd": 0,
+    "ind": 1,
+    "ty": 2,
+    "nm": "Fre_Screen 3@2x.png",
+    "cl": "png",
+    "refId": "image_0",
+    "sr": 1,
+    "ks": {
+      "o": {
+        "a": 1,
+        "k": [{
+          "i": {
+            "x": [0.337],
+            "y": [1]
+          },
+          "o": {
+            "x": [0.669],
+            "y": [0]
+          },
+          "t": 31.5,
+          "s": [0]
+        }, {
+          "t": 48,
+          "s": [100]
+        }],
+        "ix": 11
+      },
+      "r": {
+        "a": 0,
+        "k": 0,
+        "ix": 10
+      },
+      "p": {
+        "a": 1,
+        "k": [{
+          "i": {
+            "x": 0.337,
+            "y": 1
+          },
+          "o": {
+            "x": 0.669,
+            "y": 0
+          },
+          "t": 31.5,
+          "s": [2598.4, 1333.3, 0],
+          "to": [0, -33.333, 0],
+          "ti": [0, 33.333, 0]
+        }, {
+          "t": 48,
+          "s": [2598.4, 1133.3, 0]
+        }],
+        "ix": 2
+      },
+      "a": {
+        "a": 0,
+        "k": [2288, 1619, 0],
+        "ix": 1
+      },
+      "s": {
+        "a": 0,
+        "k": [70, 70, 100],
+        "ix": 6
+      }
+    },
+    "ao": 0,
+    "ip": 0,
+    "op": 96,
+    "st": 0,
+    "bm": 0
+  }, {
+    "ddd": 0,
+    "ind": 2,
+    "ty": 2,
+    "nm": "Fre_Screen 1@2x.png",
+    "cl": "png",
+    "refId": "image_1",
+    "sr": 1,
+    "ks": {
+      "o": {
+        "a": 1,
+        "k": [{
+          "i": {
+            "x": [0.337],
+            "y": [1]
+          },
+          "o": {
+            "x": [0.669],
+            "y": [0]
+          },
+          "t": 17.75,
+          "s": [0]
+        }, {
+          "t": 34.25,
+          "s": [100]
+        }],
+        "ix": 11
+      },
+      "r": {
+        "a": 0,
+        "k": 0,
+        "ix": 10
+      },
+      "p": {
+        "a": 1,
+        "k": [{
+          "i": {
+            "x": 0.337,
+            "y": 1
+          },
+          "o": {
+            "x": 0.669,
+            "y": 0
+          },
+          "t": 17.75,
+          "s": [2100, 1819, 0],
+          "to": [0, -33.333, 0],
+          "ti": [0, 33.333, 0]
+        }, {
+          "t": 34.25,
+          "s": [2100, 1619, 0]
+        }],
+        "ix": 2
+      },
+      "a": {
+        "a": 0,
+        "k": [2288, 1619, 0],
+        "ix": 1
+      },
+      "s": {
+        "a": 0,
+        "k": [70, 70, 100],
+        "ix": 6
+      }
+    },
+    "ao": 0,
+    "ip": 0,
+    "op": 96,
+    "st": 0,
+    "bm": 0
+  }, {
+    "ddd": 0,
+    "ind": 3,
+    "ty": 2,
+    "nm": "Fre_Screen 2@2x.png",
+    "cl": "png",
+    "refId": "image_2",
+    "sr": 1,
+    "ks": {
+      "o": {
+        "a": 1,
+        "k": [{
+          "i": {
+            "x": [0.337],
+            "y": [1]
+          },
+          "o": {
+            "x": [0.669],
+            "y": [0]
+          },
+          "t": 4,
+          "s": [0]
+        }, {
+          "t": 20.5,
+          "s": [100]
+        }],
+        "ix": 11
+      },
+      "r": {
+        "a": 0,
+        "k": 0,
+        "ix": 10
+      },
+      "p": {
+        "a": 1,
+        "k": [{
+          "i": {
+            "x": 0.337,
+            "y": 1
+          },
+          "o": {
+            "x": 0.669,
+            "y": 0
+          },
+          "t": 4,
+          "s": [1601.6, 2304.7, 0],
+          "to": [0, -33.333, 0],
+          "ti": [0, 33.333, 0]
+        }, {
+          "t": 20.5,
+          "s": [1601.6, 2104.7, 0]
+        }],
+        "ix": 2
+      },
+      "a": {
+        "a": 0,
+        "k": [2288, 1619, 0],
+        "ix": 1
+      },
+      "s": {
+        "a": 0,
+        "k": [70, 70, 100],
+        "ix": 6
+      }
+    },
+    "ao": 0,
+    "ip": 0,
+    "op": 96,
+    "st": 0,
+    "bm": 0
+  }],
+  "markers": []
+}, {
+  "v": "5.6.5",
+  "fr": 24,
+  "ip": 0,
+  "op": 96,
+  "w": 4200,
+  "h": 3238,
+  "nm": "Employer Web Screens",
+  "ddd": 0,
+  "assets": [{
+    "id": "image_0",
+    "w": 4576,
+    "h": 3238,
+    "u": "assets/images/sprites/",
+    "p": "Emp_Screen_1_2x.png",
+    "e": 0
+  }, {
+    "id": "image_1",
+    "w": 4576,
+    "h": 3238,
+    "u": "assets/images/sprites/",
+    "p": "Emp_Screen_2_2x.png",
+    "e": 0
+  }, {
+    "id": "image_2",
+    "w": 4576,
+    "h": 3238,
+    "u": "assets/images/sprites/",
+    "p": "Emp_Screen_3_2x.png",
+    "e": 0
+  }],
+  "layers": [{
+    "ddd": 0,
+    "ind": 1,
+    "ty": 2,
+    "nm": "Emp_Screen 1@2x.png",
+    "cl": "png",
+    "refId": "image_0",
+    "sr": 1,
+    "ks": {
+      "o": {
+        "a": 1,
+        "k": [{
+          "i": {
+            "x": [0.337],
+            "y": [1]
+          },
+          "o": {
+            "x": [0.669],
+            "y": [0]
+          },
+          "t": 31.5,
+          "s": [0]
+        }, {
+          "t": 48,
+          "s": [100]
+        }],
+        "ix": 11
+      },
+      "r": {
+        "a": 0,
+        "k": 0,
+        "ix": 10
+      },
+      "p": {
+        "a": 1,
+        "k": [{
+          "i": {
+            "x": 0.337,
+            "y": 1
+          },
+          "o": {
+            "x": 0.669,
+            "y": 0
+          },
+          "t": 31.5,
+          "s": [2598.4, 1333.3, 0],
+          "to": [0, -33.333, 0],
+          "ti": [0, 33.333, 0]
+        }, {
+          "t": 48,
+          "s": [2598.4, 1133.3, 0]
+        }],
+        "ix": 2
+      },
+      "a": {
+        "a": 0,
+        "k": [2288, 1619, 0],
+        "ix": 1
+      },
+      "s": {
+        "a": 0,
+        "k": [70, 70, 100],
+        "ix": 6
+      }
+    },
+    "ao": 0,
+    "ip": 0,
+    "op": 96,
+    "st": 0,
+    "bm": 0
+  }, {
+    "ddd": 0,
+    "ind": 2,
+    "ty": 2,
+    "nm": "Emp_Screen 2@2x.png",
+    "cl": "png",
+    "refId": "image_1",
+    "sr": 1,
+    "ks": {
+      "o": {
+        "a": 1,
+        "k": [{
+          "i": {
+            "x": [0.337],
+            "y": [1]
+          },
+          "o": {
+            "x": [0.669],
+            "y": [0]
+          },
+          "t": 18,
+          "s": [0]
+        }, {
+          "t": 34.5,
+          "s": [100]
+        }],
+        "ix": 11
+      },
+      "r": {
+        "a": 0,
+        "k": 0,
+        "ix": 10
+      },
+      "p": {
+        "a": 1,
+        "k": [{
+          "i": {
+            "x": 0.337,
+            "y": 1
+          },
+          "o": {
+            "x": 0.669,
+            "y": 0
+          },
+          "t": 18,
+          "s": [2100, 1819, 0],
+          "to": [0, -33.333, 0],
+          "ti": [0, 33.333, 0]
+        }, {
+          "t": 34.5,
+          "s": [2100, 1619, 0]
+        }],
+        "ix": 2
+      },
+      "a": {
+        "a": 0,
+        "k": [2288, 1619, 0],
+        "ix": 1
+      },
+      "s": {
+        "a": 0,
+        "k": [70, 70, 100],
+        "ix": 6
+      }
+    },
+    "ao": 0,
+    "ip": 0,
+    "op": 96,
+    "st": 0,
+    "bm": 0
+  }, {
+    "ddd": 0,
+    "ind": 3,
+    "ty": 2,
+    "nm": "Emp_Screen 3@2x.png",
+    "cl": "png",
+    "refId": "image_2",
+    "sr": 1,
+    "ks": {
+      "o": {
+        "a": 1,
+        "k": [{
+          "i": {
+            "x": [0.337],
+            "y": [1]
+          },
+          "o": {
+            "x": [0.669],
+            "y": [0]
+          },
+          "t": 4,
+          "s": [0]
+        }, {
+          "t": 20.5,
+          "s": [100]
+        }],
+        "ix": 11
+      },
+      "r": {
+        "a": 0,
+        "k": 0,
+        "ix": 10
+      },
+      "p": {
+        "a": 1,
+        "k": [{
+          "i": {
+            "x": 0.337,
+            "y": 1
+          },
+          "o": {
+            "x": 0.669,
+            "y": 0
+          },
+          "t": 4,
+          "s": [1601.6, 2304.7, 0],
+          "to": [0, -33.333, 0],
+          "ti": [0, 33.333, 0]
+        }, {
+          "t": 20.5,
+          "s": [1601.6, 2104.7, 0]
+        }],
+        "ix": 2
+      },
+      "a": {
+        "a": 0,
+        "k": [2288, 1619, 0],
+        "ix": 1
+      },
+      "s": {
+        "a": 0,
+        "k": [70, 70, 100],
+        "ix": 6
+      }
+    },
+    "ao": 0,
+    "ip": 0,
+    "op": 96,
+    "st": 0,
+    "bm": 0
+  }],
+  "markers": []
+}];
+var arabic = [{
+  "v": "5.6.5",
+  "fr": 24,
+  "ip": 0,
+  "op": 96,
+  "w": 4200,
+  "h": 3238,
+  "nm": "Emp_Arabic",
+  "ddd": 0,
+  "assets": [{
+    "id": "image_0",
+    "w": 4576,
+    "h": 3238,
+    "u": "assets/images/sprites/",
+    "p": "Emp_Screen_Arabic_1.png",
+    "e": 0
+  }, {
+    "id": "image_1",
+    "w": 4576,
+    "h": 3238,
+    "u": "assets/images/sprites/",
+    "p": "Emp_Screen_Arabic_2.png",
+    "e": 0
+  }, {
+    "id": "image_2",
+    "w": 4576,
+    "h": 3238,
+    "u": "assets/images/sprites/",
+    "p": "Emp_Screen_Arabic_3.png",
+    "e": 0
+  }],
+  "layers": [{
+    "ddd": 0,
+    "ind": 1,
+    "ty": 2,
+    "nm": "Emp_Screen_Arabic 1.png",
+    "cl": "png",
+    "refId": "image_0",
+    "sr": 1,
+    "ks": {
+      "o": {
+        "a": 1,
+        "k": [{
+          "i": {
+            "x": [0.337],
+            "y": [1]
+          },
+          "o": {
+            "x": [0.669],
+            "y": [0]
+          },
+          "t": 31.5,
+          "s": [0]
+        }, {
+          "t": 48,
+          "s": [100]
+        }],
+        "ix": 11
+      },
+      "r": {
+        "a": 0,
+        "k": 0,
+        "ix": 10
+      },
+      "p": {
+        "a": 1,
+        "k": [{
+          "i": {
+            "x": 0.337,
+            "y": 1
+          },
+          "o": {
+            "x": 0.669,
+            "y": 0
+          },
+          "t": 31.5,
+          "s": [2598.4, 1333.3, 0],
+          "to": [0, -33.333, 0],
+          "ti": [0, 33.333, 0]
+        }, {
+          "t": 48,
+          "s": [2598.4, 1133.3, 0]
+        }],
+        "ix": 2
+      },
+      "a": {
+        "a": 0,
+        "k": [2288, 1619, 0],
+        "ix": 1
+      },
+      "s": {
+        "a": 0,
+        "k": [70, 70, 100],
+        "ix": 6
+      }
+    },
+    "ao": 0,
+    "ip": 0,
+    "op": 96,
+    "st": 0,
+    "bm": 0
+  }, {
+    "ddd": 0,
+    "ind": 2,
+    "ty": 2,
+    "nm": "Emp_Screen_Arabic 2.png",
+    "cl": "png",
+    "refId": "image_1",
+    "sr": 1,
+    "ks": {
+      "o": {
+        "a": 1,
+        "k": [{
+          "i": {
+            "x": [0.337],
+            "y": [1]
+          },
+          "o": {
+            "x": [0.669],
+            "y": [0]
+          },
+          "t": 18,
+          "s": [0]
+        }, {
+          "t": 34.5,
+          "s": [100]
+        }],
+        "ix": 11
+      },
+      "r": {
+        "a": 0,
+        "k": 0,
+        "ix": 10
+      },
+      "p": {
+        "a": 1,
+        "k": [{
+          "i": {
+            "x": 0.337,
+            "y": 1
+          },
+          "o": {
+            "x": 0.669,
+            "y": 0
+          },
+          "t": 18,
+          "s": [2100, 1819, 0],
+          "to": [0, -33.333, 0],
+          "ti": [0, 33.333, 0]
+        }, {
+          "t": 34.5,
+          "s": [2100, 1619, 0]
+        }],
+        "ix": 2
+      },
+      "a": {
+        "a": 0,
+        "k": [2288, 1619, 0],
+        "ix": 1
+      },
+      "s": {
+        "a": 0,
+        "k": [70, 70, 100],
+        "ix": 6
+      }
+    },
+    "ao": 0,
+    "ip": 0,
+    "op": 96,
+    "st": 0,
+    "bm": 0
+  }, {
+    "ddd": 0,
+    "ind": 3,
+    "ty": 2,
+    "nm": "Emp_Screen_Arabic 3.png",
+    "cl": "png",
+    "refId": "image_2",
+    "sr": 1,
+    "ks": {
+      "o": {
+        "a": 1,
+        "k": [{
+          "i": {
+            "x": [0.337],
+            "y": [1]
+          },
+          "o": {
+            "x": [0.669],
+            "y": [0]
+          },
+          "t": 4,
+          "s": [0]
+        }, {
+          "t": 20.5,
+          "s": [100]
+        }],
+        "ix": 11
+      },
+      "r": {
+        "a": 0,
+        "k": 0,
+        "ix": 10
+      },
+      "p": {
+        "a": 1,
+        "k": [{
+          "i": {
+            "x": 0.337,
+            "y": 1
+          },
+          "o": {
+            "x": 0.669,
+            "y": 0
+          },
+          "t": 4,
+          "s": [1601.6, 2304.7, 0],
+          "to": [0, -33.333, 0],
+          "ti": [0, 33.333, 0]
+        }, {
+          "t": 20.5,
+          "s": [1601.6, 2104.7, 0]
+        }],
+        "ix": 2
+      },
+      "a": {
+        "a": 0,
+        "k": [2288, 1619, 0],
+        "ix": 1
+      },
+      "s": {
+        "a": 0,
+        "k": [70, 70, 100],
+        "ix": 6
+      }
+    },
+    "ao": 0,
+    "ip": 0,
+    "op": 96,
+    "st": 0,
+    "bm": 0
+  }],
+  "markers": []
+}, {
+  "v": "5.6.5",
+  "fr": 24,
+  "ip": 0,
+  "op": 96,
+  "w": 4200,
+  "h": 3238,
+  "nm": "Fre_Arabic",
+  "ddd": 0,
+  "assets": [{
+    "id": "image_0",
+    "w": 4576,
+    "h": 3238,
+    "u": "assets/images/sprites/",
+    "p": "Fre_Screen_Arabic_1.png",
+    "e": 0
+  }, {
+    "id": "image_1",
+    "w": 4576,
+    "h": 3238,
+    "u": "assets/images/sprites/",
+    "p": "Fre_Screen_Arabic_2.png",
+    "e": 0
+  }, {
+    "id": "image_2",
+    "w": 4576,
+    "h": 3238,
+    "u": "assets/images/sprites/",
+    "p": "Fre_Screen_Arabic_3.png",
+    "e": 0
+  }],
+  "layers": [{
+    "ddd": 0,
+    "ind": 1,
+    "ty": 2,
+    "nm": "Fre_Screen_Arabic 1.png",
+    "cl": "png",
+    "refId": "image_0",
+    "sr": 1,
+    "ks": {
+      "o": {
+        "a": 1,
+        "k": [{
+          "i": {
+            "x": [0.337],
+            "y": [1]
+          },
+          "o": {
+            "x": [0.669],
+            "y": [0]
+          },
+          "t": 31.5,
+          "s": [0]
+        }, {
+          "t": 48,
+          "s": [100]
+        }],
+        "ix": 11
+      },
+      "r": {
+        "a": 0,
+        "k": 0,
+        "ix": 10
+      },
+      "p": {
+        "a": 1,
+        "k": [{
+          "i": {
+            "x": 0.337,
+            "y": 1
+          },
+          "o": {
+            "x": 0.669,
+            "y": 0
+          },
+          "t": 31.5,
+          "s": [2598.4, 1333.3, 0],
+          "to": [0, -33.333, 0],
+          "ti": [0, 33.333, 0]
+        }, {
+          "t": 48,
+          "s": [2598.4, 1133.3, 0]
+        }],
+        "ix": 2
+      },
+      "a": {
+        "a": 0,
+        "k": [2288, 1619, 0],
+        "ix": 1
+      },
+      "s": {
+        "a": 0,
+        "k": [70, 70, 100],
+        "ix": 6
+      }
+    },
+    "ao": 0,
+    "ip": 0,
+    "op": 96,
+    "st": 0,
+    "bm": 0
+  }, {
+    "ddd": 0,
+    "ind": 2,
+    "ty": 2,
+    "nm": "Fre_Screen_Arabic 2.png",
+    "cl": "png",
+    "refId": "image_1",
+    "sr": 1,
+    "ks": {
+      "o": {
+        "a": 1,
+        "k": [{
+          "i": {
+            "x": [0.337],
+            "y": [1]
+          },
+          "o": {
+            "x": [0.669],
+            "y": [0]
+          },
+          "t": 18,
+          "s": [0]
+        }, {
+          "t": 34.5,
+          "s": [100]
+        }],
+        "ix": 11
+      },
+      "r": {
+        "a": 0,
+        "k": 0,
+        "ix": 10
+      },
+      "p": {
+        "a": 1,
+        "k": [{
+          "i": {
+            "x": 0.337,
+            "y": 1
+          },
+          "o": {
+            "x": 0.669,
+            "y": 0
+          },
+          "t": 18,
+          "s": [2100, 1819, 0],
+          "to": [0, -33.333, 0],
+          "ti": [0, 33.333, 0]
+        }, {
+          "t": 34.5,
+          "s": [2100, 1619, 0]
+        }],
+        "ix": 2
+      },
+      "a": {
+        "a": 0,
+        "k": [2288, 1619, 0],
+        "ix": 1
+      },
+      "s": {
+        "a": 0,
+        "k": [70, 70, 100],
+        "ix": 6
+      }
+    },
+    "ao": 0,
+    "ip": 0,
+    "op": 96,
+    "st": 0,
+    "bm": 0
+  }, {
+    "ddd": 0,
+    "ind": 3,
+    "ty": 2,
+    "nm": "Fre_Screen_Arabic 3.png",
+    "cl": "png",
+    "refId": "image_2",
+    "sr": 1,
+    "ks": {
+      "o": {
+        "a": 1,
+        "k": [{
+          "i": {
+            "x": [0.337],
+            "y": [1]
+          },
+          "o": {
+            "x": [0.669],
+            "y": [0]
+          },
+          "t": 4,
+          "s": [0]
+        }, {
+          "t": 20.5,
+          "s": [100]
+        }],
+        "ix": 11
+      },
+      "r": {
+        "a": 0,
+        "k": 0,
+        "ix": 10
+      },
+      "p": {
+        "a": 1,
+        "k": [{
+          "i": {
+            "x": 0.337,
+            "y": 1
+          },
+          "o": {
+            "x": 0.669,
+            "y": 0
+          },
+          "t": 4,
+          "s": [1601.6, 2304.7, 0],
+          "to": [0, -33.333, 0],
+          "ti": [0, 33.333, 0]
+        }, {
+          "t": 20.5,
+          "s": [1601.6, 2104.7, 0]
+        }],
+        "ix": 2
+      },
+      "a": {
+        "a": 0,
+        "k": [2288, 1619, 0],
+        "ix": 1
+      },
+      "s": {
+        "a": 0,
+        "k": [70, 70, 100],
+        "ix": 6
+      }
+    },
+    "ao": 0,
+    "ip": 0,
+    "op": 96,
+    "st": 0,
+    "bm": 0
+  }],
+  "markers": []
+}];
+
+
+/***/ }),
+
 /***/ "./node_modules/lottie-web/build/player/lottie.js":
 /*!********************************************************!*\
   !*** ./node_modules/lottie-web/build/player/lottie.js ***!
@@ -16695,13 +17685,23 @@ var __webpack_exports__ = {};
   !*** ./src/js/main.js ***!
   \************************/
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var lottie_web__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lottie-web */ "./node_modules/lottie-web/build/player/lottie.js");
-/* harmony import */ var lottie_web__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lottie_web__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var smooth_scroll__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! smooth-scroll */ "./node_modules/smooth-scroll/dist/smooth-scroll.polyfills.min.js");
-/* harmony import */ var smooth_scroll__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(smooth_scroll__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _animations__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./animations */ "./src/js/animations.js");
+/* harmony import */ var lottie_web__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! lottie-web */ "./node_modules/lottie-web/build/player/lottie.js");
+/* harmony import */ var lottie_web__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(lottie_web__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var smooth_scroll__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! smooth-scroll */ "./node_modules/smooth-scroll/dist/smooth-scroll.polyfills.min.js");
+/* harmony import */ var smooth_scroll__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(smooth_scroll__WEBPACK_IMPORTED_MODULE_2__);
+
 
 
 document.addEventListener("DOMContentLoaded", function () {
+  var mac = /(Mac|iPhone|iPod|iPad|Linux)/i.test(navigator.platform);
+
+  if (mac) {
+    var style = document.createElement('style');
+    style.innerHTML = "button.btn, a.btn{ padding-top: .7em !important; padding-bottom: .4em !important} #options a.btn:after { padding-bottom: .25em !important}";
+    document.head.appendChild(style);
+  }
+
   var scrollToSmoothSettings = {
     // Selectors
     container: document,
@@ -16713,7 +17713,7 @@ document.addEventListener("DOMContentLoaded", function () {
     durationRelative: true,
     durationMin: 300,
     durationMax: 5000,
-    easing: smooth_scroll__WEBPACK_IMPORTED_MODULE_1__.easeInOutBack,
+    easing: smooth_scroll__WEBPACK_IMPORTED_MODULE_2__.easeInOutBack,
     // Callbacks
     onScrollStart: null,
     onScrollUpdate: null,
@@ -16721,7 +17721,7 @@ document.addEventListener("DOMContentLoaded", function () {
   };
   document.querySelector('#options a').addEventListener('clicks', function (event) {
     event.preventDefault();
-    var smoothScroll = new (smooth_scroll__WEBPACK_IMPORTED_MODULE_1___default())();
+    var smoothScroll = new (smooth_scroll__WEBPACK_IMPORTED_MODULE_2___default())();
     smoothScroll.animateScroll(document.getElementById('contact'), event.target, {
       speed: 800,
       easing: 'easeOutCubic'
@@ -16734,493 +17734,7 @@ document.addEventListener("DOMContentLoaded", function () {
       event.preventDefault();
     });
   });
-  var animationData = [{
-    "v": "5.6.5",
-    "fr": 24,
-    "ip": 0,
-    "op": 96,
-    "w": 4200,
-    "h": 3238,
-    "nm": "Freelancer Web Screens",
-    "ddd": 0,
-    "assets": [{
-      "id": "image_0",
-      "w": 4576,
-      "h": 3238,
-      "u": "assets/images/sprites/",
-      "p": "img_0.png",
-      "e": 0
-    }, {
-      "id": "image_1",
-      "w": 4576,
-      "h": 3238,
-      "u": "assets/images/sprites/",
-      "p": "img_1.png",
-      "e": 0
-    }, {
-      "id": "image_2",
-      "w": 4576,
-      "h": 3238,
-      "u": "assets/images/sprites/",
-      "p": "img_2.png",
-      "e": 0
-    }],
-    "layers": [{
-      "ddd": 0,
-      "ind": 1,
-      "ty": 2,
-      "nm": "Fre_Screen 3@2x.png",
-      "cl": "png",
-      "refId": "image_0",
-      "sr": 1,
-      "ks": {
-        "o": {
-          "a": 1,
-          "k": [{
-            "i": {
-              "x": [0.337],
-              "y": [1]
-            },
-            "o": {
-              "x": [0.669],
-              "y": [0]
-            },
-            "t": 31.5,
-            "s": [0]
-          }, {
-            "t": 48,
-            "s": [100]
-          }],
-          "ix": 11
-        },
-        "r": {
-          "a": 0,
-          "k": 0,
-          "ix": 10
-        },
-        "p": {
-          "a": 1,
-          "k": [{
-            "i": {
-              "x": 0.337,
-              "y": 1
-            },
-            "o": {
-              "x": 0.669,
-              "y": 0
-            },
-            "t": 31.5,
-            "s": [2598.4, 1333.3, 0],
-            "to": [0, -33.333, 0],
-            "ti": [0, 33.333, 0]
-          }, {
-            "t": 48,
-            "s": [2598.4, 1133.3, 0]
-          }],
-          "ix": 2
-        },
-        "a": {
-          "a": 0,
-          "k": [2288, 1619, 0],
-          "ix": 1
-        },
-        "s": {
-          "a": 0,
-          "k": [70, 70, 100],
-          "ix": 6
-        }
-      },
-      "ao": 0,
-      "ip": 0,
-      "op": 96,
-      "st": 0,
-      "bm": 0
-    }, {
-      "ddd": 0,
-      "ind": 2,
-      "ty": 2,
-      "nm": "Fre_Screen 1@2x.png",
-      "cl": "png",
-      "refId": "image_1",
-      "sr": 1,
-      "ks": {
-        "o": {
-          "a": 1,
-          "k": [{
-            "i": {
-              "x": [0.337],
-              "y": [1]
-            },
-            "o": {
-              "x": [0.669],
-              "y": [0]
-            },
-            "t": 17.75,
-            "s": [0]
-          }, {
-            "t": 34.25,
-            "s": [100]
-          }],
-          "ix": 11
-        },
-        "r": {
-          "a": 0,
-          "k": 0,
-          "ix": 10
-        },
-        "p": {
-          "a": 1,
-          "k": [{
-            "i": {
-              "x": 0.337,
-              "y": 1
-            },
-            "o": {
-              "x": 0.669,
-              "y": 0
-            },
-            "t": 17.75,
-            "s": [2100, 1819, 0],
-            "to": [0, -33.333, 0],
-            "ti": [0, 33.333, 0]
-          }, {
-            "t": 34.25,
-            "s": [2100, 1619, 0]
-          }],
-          "ix": 2
-        },
-        "a": {
-          "a": 0,
-          "k": [2288, 1619, 0],
-          "ix": 1
-        },
-        "s": {
-          "a": 0,
-          "k": [70, 70, 100],
-          "ix": 6
-        }
-      },
-      "ao": 0,
-      "ip": 0,
-      "op": 96,
-      "st": 0,
-      "bm": 0
-    }, {
-      "ddd": 0,
-      "ind": 3,
-      "ty": 2,
-      "nm": "Fre_Screen 2@2x.png",
-      "cl": "png",
-      "refId": "image_2",
-      "sr": 1,
-      "ks": {
-        "o": {
-          "a": 1,
-          "k": [{
-            "i": {
-              "x": [0.337],
-              "y": [1]
-            },
-            "o": {
-              "x": [0.669],
-              "y": [0]
-            },
-            "t": 4,
-            "s": [0]
-          }, {
-            "t": 20.5,
-            "s": [100]
-          }],
-          "ix": 11
-        },
-        "r": {
-          "a": 0,
-          "k": 0,
-          "ix": 10
-        },
-        "p": {
-          "a": 1,
-          "k": [{
-            "i": {
-              "x": 0.337,
-              "y": 1
-            },
-            "o": {
-              "x": 0.669,
-              "y": 0
-            },
-            "t": 4,
-            "s": [1601.6, 2304.7, 0],
-            "to": [0, -33.333, 0],
-            "ti": [0, 33.333, 0]
-          }, {
-            "t": 20.5,
-            "s": [1601.6, 2104.7, 0]
-          }],
-          "ix": 2
-        },
-        "a": {
-          "a": 0,
-          "k": [2288, 1619, 0],
-          "ix": 1
-        },
-        "s": {
-          "a": 0,
-          "k": [70, 70, 100],
-          "ix": 6
-        }
-      },
-      "ao": 0,
-      "ip": 0,
-      "op": 96,
-      "st": 0,
-      "bm": 0
-    }],
-    "markers": []
-  }, {
-    "v": "5.6.5",
-    "fr": 24,
-    "ip": 0,
-    "op": 96,
-    "w": 4200,
-    "h": 3238,
-    "nm": "Employer Web Screens",
-    "ddd": 0,
-    "assets": [{
-      "id": "image_3",
-      "w": 4576,
-      "h": 3238,
-      "u": "assets/images/sprites/",
-      "p": "img_3.png",
-      "e": 0
-    }, {
-      "id": "image_4",
-      "w": 4576,
-      "h": 3238,
-      "u": "assets/images/sprites/",
-      "p": "img_4.png",
-      "e": 0
-    }, {
-      "id": "image_5",
-      "w": 4576,
-      "h": 3238,
-      "u": "assets/images/sprites/",
-      "p": "img_5.png",
-      "e": 0
-    }],
-    "layers": [{
-      "ddd": 0,
-      "ind": 1,
-      "ty": 2,
-      "nm": "Emp_Screen 1@2x.png",
-      "cl": "png",
-      "refId": "image_3",
-      "sr": 1,
-      "ks": {
-        "o": {
-          "a": 1,
-          "k": [{
-            "i": {
-              "x": [0.337],
-              "y": [1]
-            },
-            "o": {
-              "x": [0.669],
-              "y": [0]
-            },
-            "t": 31.5,
-            "s": [0]
-          }, {
-            "t": 48,
-            "s": [100]
-          }],
-          "ix": 11
-        },
-        "r": {
-          "a": 0,
-          "k": 0,
-          "ix": 10
-        },
-        "p": {
-          "a": 1,
-          "k": [{
-            "i": {
-              "x": 0.337,
-              "y": 1
-            },
-            "o": {
-              "x": 0.669,
-              "y": 0
-            },
-            "t": 31.5,
-            "s": [2598.4, 1333.3, 0],
-            "to": [0, -33.333, 0],
-            "ti": [0, 33.333, 0]
-          }, {
-            "t": 48,
-            "s": [2598.4, 1133.3, 0]
-          }],
-          "ix": 2
-        },
-        "a": {
-          "a": 0,
-          "k": [2288, 1619, 0],
-          "ix": 1
-        },
-        "s": {
-          "a": 0,
-          "k": [70, 70, 100],
-          "ix": 6
-        }
-      },
-      "ao": 0,
-      "ip": 0,
-      "op": 96,
-      "st": 0,
-      "bm": 0
-    }, {
-      "ddd": 0,
-      "ind": 2,
-      "ty": 2,
-      "nm": "Emp_Screen 2@2x.png",
-      "cl": "png",
-      "refId": "image_4",
-      "sr": 1,
-      "ks": {
-        "o": {
-          "a": 1,
-          "k": [{
-            "i": {
-              "x": [0.337],
-              "y": [1]
-            },
-            "o": {
-              "x": [0.669],
-              "y": [0]
-            },
-            "t": 18,
-            "s": [0]
-          }, {
-            "t": 34.5,
-            "s": [100]
-          }],
-          "ix": 11
-        },
-        "r": {
-          "a": 0,
-          "k": 0,
-          "ix": 10
-        },
-        "p": {
-          "a": 1,
-          "k": [{
-            "i": {
-              "x": 0.337,
-              "y": 1
-            },
-            "o": {
-              "x": 0.669,
-              "y": 0
-            },
-            "t": 18,
-            "s": [2100, 1819, 0],
-            "to": [0, -33.333, 0],
-            "ti": [0, 33.333, 0]
-          }, {
-            "t": 34.5,
-            "s": [2100, 1619, 0]
-          }],
-          "ix": 2
-        },
-        "a": {
-          "a": 0,
-          "k": [2288, 1619, 0],
-          "ix": 1
-        },
-        "s": {
-          "a": 0,
-          "k": [70, 70, 100],
-          "ix": 6
-        }
-      },
-      "ao": 0,
-      "ip": 0,
-      "op": 96,
-      "st": 0,
-      "bm": 0
-    }, {
-      "ddd": 0,
-      "ind": 3,
-      "ty": 2,
-      "nm": "Emp_Screen 3@2x.png",
-      "cl": "png",
-      "refId": "image_5",
-      "sr": 1,
-      "ks": {
-        "o": {
-          "a": 1,
-          "k": [{
-            "i": {
-              "x": [0.337],
-              "y": [1]
-            },
-            "o": {
-              "x": [0.669],
-              "y": [0]
-            },
-            "t": 4,
-            "s": [0]
-          }, {
-            "t": 20.5,
-            "s": [100]
-          }],
-          "ix": 11
-        },
-        "r": {
-          "a": 0,
-          "k": 0,
-          "ix": 10
-        },
-        "p": {
-          "a": 1,
-          "k": [{
-            "i": {
-              "x": 0.337,
-              "y": 1
-            },
-            "o": {
-              "x": 0.669,
-              "y": 0
-            },
-            "t": 4,
-            "s": [1601.6, 2304.7, 0],
-            "to": [0, -33.333, 0],
-            "ti": [0, 33.333, 0]
-          }, {
-            "t": 20.5,
-            "s": [1601.6, 2104.7, 0]
-          }],
-          "ix": 2
-        },
-        "a": {
-          "a": 0,
-          "k": [2288, 1619, 0],
-          "ix": 1
-        },
-        "s": {
-          "a": 0,
-          "k": [70, 70, 100],
-          "ix": 6
-        }
-      },
-      "ao": 0,
-      "ip": 0,
-      "op": 96,
-      "st": 0,
-      "bm": 0
-    }],
-    "markers": []
-  }];
+  var animationData = document.body.dataset.lang === "english" ? _animations__WEBPACK_IMPORTED_MODULE_0__.english : _animations__WEBPACK_IMPORTED_MODULE_0__.arabic;
   var params = [{
     container: document.querySelectorAll('.image')[0],
     renderer: 'svg',
@@ -17243,7 +17757,7 @@ document.addEventListener("DOMContentLoaded", function () {
   var started = [0, 1];
   var anims = Array.from(document.querySelectorAll('.info')).map(function (el, index) {
     console.log("loading");
-    return lottie_web__WEBPACK_IMPORTED_MODULE_0___default().loadAnimation(params[index]);
+    return lottie_web__WEBPACK_IMPORTED_MODULE_1___default().loadAnimation(params[index]);
   });
 
   window.onscroll = function (e) {
@@ -17270,8 +17784,8 @@ document.addEventListener("DOMContentLoaded", function () {
         el.classList.remove('active');
       });
       el.classList.add('active');
-      var href = this.href.split("/");
-      href = href[href.length - 1];
+      var href = this.href.split("#");
+      href = "#" + href[href.length - 1];
       console.log(href);
       document.querySelectorAll('.tabs ul').forEach(function (el) {
         console.log(el);
@@ -17282,6 +17796,20 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+})();
+
+// This entry need to be wrapped in an IIFE because it need to be in strict mode.
+(() => {
+"use strict";
+var __webpack_exports__ = {};
+/*!******************************!*\
+  !*** ./src/scss/arabic.scss ***!
+  \******************************/
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("data:text/x-scss;charset=utf-8;base64,ZXhwb3J0IGRlZmF1bHQgX193ZWJwYWNrX3B1YmxpY19wYXRoX18gKyAiLi9jc3MvYXJhYmljLmNzcyI7");
 })();
 
 // This entry need to be wrapped in an IIFE because it need to be in strict mode.
