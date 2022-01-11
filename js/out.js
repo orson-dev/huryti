@@ -16702,6 +16702,14 @@ __webpack_require__.r(__webpack_exports__);
 
 
 document.addEventListener("DOMContentLoaded", function () {
+  var mac = /(Mac|iPhone|iPod|iPad|Linux)/i.test(navigator.platform);
+
+  if (mac) {
+    var style = document.createElement('style');
+    style.innerHTML = "button.btn, a.btn, #options a.btn:after { padding-top: .7em !important; padding-bottom: .4em !important}";
+    document.head.appendChild(style);
+  }
+
   var scrollToSmoothSettings = {
     // Selectors
     container: document,
