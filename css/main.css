@@ -1189,7 +1189,7 @@ header #hero article:last-of-type {
   @media not all and (min-resolution: 0.001dpcm) {
     @supports (-webkit-appearance: none) {
       #contact .boxed form .inputs div textarea {
-        height: 40%;
+        max-height: 15em;
       }
     }
   }
