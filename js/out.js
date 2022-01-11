@@ -16706,7 +16706,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   if (mac) {
     var style = document.createElement('style');
-    style.innerHTML = "button.btn, a.btn, #options a.btn:after { padding-top: .7em !important; padding-bottom: .4em !important}";
+    style.innerHTML = "button.btn, a.btn{ padding-top: .7em !important; padding-bottom: .4em !important} #options a.btn:after { padding-top: .8em !important; padding-bottom: .3em !important}";
     document.head.appendChild(style);
   }
 
