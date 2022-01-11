@@ -16987,25 +16987,25 @@ document.addEventListener("DOMContentLoaded", function () {
     "nm": "Employer Web Screens",
     "ddd": 0,
     "assets": [{
-      "id": "image_3",
+      "id": "image_0",
       "w": 4576,
       "h": 3238,
       "u": "assets/images/sprites/",
-      "p": "img_3.png",
+      "p": "Emp_Screen_1_2x.png",
       "e": 0
     }, {
-      "id": "image_4",
+      "id": "image_1",
       "w": 4576,
       "h": 3238,
       "u": "assets/images/sprites/",
-      "p": "img_4.png",
+      "p": "Emp_Screen_2_2x.png",
       "e": 0
     }, {
-      "id": "image_5",
+      "id": "image_2",
       "w": 4576,
       "h": 3238,
       "u": "assets/images/sprites/",
-      "p": "img_5.png",
+      "p": "Emp_Screen_3_2x.png",
       "e": 0
     }],
     "layers": [{
@@ -17014,7 +17014,7 @@ document.addEventListener("DOMContentLoaded", function () {
       "ty": 2,
       "nm": "Emp_Screen 1@2x.png",
       "cl": "png",
-      "refId": "image_3",
+      "refId": "image_0",
       "sr": 1,
       "ks": {
         "o": {
@@ -17084,7 +17084,7 @@ document.addEventListener("DOMContentLoaded", function () {
       "ty": 2,
       "nm": "Emp_Screen 2@2x.png",
       "cl": "png",
-      "refId": "image_4",
+      "refId": "image_1",
       "sr": 1,
       "ks": {
         "o": {
@@ -17154,7 +17154,7 @@ document.addEventListener("DOMContentLoaded", function () {
       "ty": 2,
       "nm": "Emp_Screen 3@2x.png",
       "cl": "png",
-      "refId": "image_5",
+      "refId": "image_2",
       "sr": 1,
       "ks": {
         "o": {
@@ -17282,6 +17282,20 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+})();
+
+// This entry need to be wrapped in an IIFE because it need to be in strict mode.
+(() => {
+"use strict";
+var __webpack_exports__ = {};
+/*!******************************!*\
+  !*** ./src/scss/arabic.scss ***!
+  \******************************/
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("data:text/x-scss;charset=utf-8;base64,ZXhwb3J0IGRlZmF1bHQgX193ZWJwYWNrX3B1YmxpY19wYXRoX18gKyAiLi9jc3MvYXJhYmljLmNzcyI7");
 })();
 
 // This entry need to be wrapped in an IIFE because it need to be in strict mode.

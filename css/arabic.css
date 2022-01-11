@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=El+Messiri:wght@700&family=Tajawal:wght@400;500;700&display=swap");
 * {
   box-sizing: border-box;
@@ -5,6 +6,8 @@
   padding: 0;
   list-style-type: none;
   text-decoration: none;
+  direction: RTL;
+  text-align: start !important;
 }
 
 .container .row {
@@ -60,7 +63,7 @@
 html {
   font-family: "Tajawal", sans-serif;
   font-size: 16px;
-  direction: ltr;
+  direction: rtl;
 }
 @media only screen and (min-width: 1366px) {
   html {
@@ -145,7 +148,7 @@ button.btn {
   border: none;
   outline: 0;
   font-weight: bold;
-  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
   background-color: #2E9942;
   color: #FAFAF5;
   text-align: center;
@@ -164,7 +167,7 @@ button.btn {
 
 .txt {
   border-radius: 5em;
-  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
   border: none;
   font-size: 1rem;
   padding: 0.5em 0.5em;
@@ -197,7 +200,7 @@ ul li {
 ul li span {
   width: 100%;
   display: block;
-  padding-left: 0.8em;
+  padding-right: 0.8em;
 }
 ul li::before {
   content: "";
@@ -242,13 +245,13 @@ header nav #logo {
 }
 header #options a.basic {
   display: inline-block;
-  margin-right: 0.5em;
+  margin-left: 1.2em;
   color: #2E9942;
   font-weight: bold;
 }
 @media only screen and (min-width: 640px) {
   header #options a.basic {
-    margin-right: 1.5em;
+    margin-left: 1.5em;
   }
 }
 header #options a.basic:hover {
@@ -260,12 +263,12 @@ header #options a.btn {
   color: transparent;
 }
 header #options a.btn:after {
-  content: "Contact us";
+  content: "اتصل بنا";
   position: absolute;
   bottom: 0;
-  left: 0;
+  right: 0;
   height: 60%;
-  width: 70%;
+  width: 65%;
   z-index: 2;
   display: inline-block;
   padding: 0.5rem 1.1em 0.5em 1em;
@@ -273,7 +276,7 @@ header #options a.btn:after {
   border: none;
   outline: 0;
   font-weight: bold;
-  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
   color: #FAFAF5;
 }
 @media only screen and (min-width: 1024px) {
@@ -290,15 +293,15 @@ header #options a.btn:before {
   border: none;
   outline: 0;
   font-weight: bold;
-  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
   background-color: #142033;
   bottom: 0;
-  left: 0;
+  right: 0;
   z-index: 0;
   height: 60%;
   width: 70%;
   transform: scale(0);
-  transform-origin: left bottom;
+  transform-origin: right bottom;
   transition: transform 300ms;
 }
 @media only screen and (min-width: 1024px) {
@@ -324,8 +327,8 @@ header #hero {
   border: none;
   outline: 0;
   font-weight: bold;
-  border-bottom-left-radius: 0 !important;
-  border-bottom-left-radius: 0.2em;
+  border-bottom-right-radius: 0 !important;
+  border-bottom-right-radius: 0.2em;
   width: 100%;
   z-index: 1;
   background: #1e304d;
@@ -364,6 +367,7 @@ header #hero {
 header #hero .dots {
   background-image: url("../assets/images/hero.dots.svg");
   background-repeat: no-repeat;
+  transform: scaleX(-1);
   width: 100%;
   height: 100%;
   background-position: center top;
@@ -414,13 +418,13 @@ header #hero article:first-of-type {
 }
 @media only screen and (min-width: 1024px) {
   header #hero article:first-of-type {
-    padding: 0 5em 0 0;
+    padding: 0 0 0 5em;
     width: 50%;
   }
 }
 @media only screen and (min-width: 1366px) {
   header #hero article:first-of-type {
-    padding-left: 5em;
+    padding-right: 5em;
     align-self: center;
   }
 }
@@ -456,7 +460,7 @@ header #hero article:first-of-type form :last-child {
 @media only screen and (min-width: 1024px) {
   header #hero article:first-of-type form :last-child {
     margin-top: 0;
-    margin-left: 16px;
+    margin-right: 16px;
   }
 }
 header #hero article:last-of-type {
@@ -517,7 +521,7 @@ header #hero article:last-of-type {
   width: 2rem;
   height: 2rem;
   top: 0.5rem;
-  left: -2.8rem;
+  right: -2.8rem;
 }
 #intro article div {
   width: 100%;
@@ -561,7 +565,7 @@ header #hero article:last-of-type {
 #intro article div.info h2::before {
   content: "";
   position: absolute;
-  left: -3.5rem;
+  right: -3.5rem;
   top: -0.5rem;
   display: inline-block;
   width: 2.8rem;
@@ -623,7 +627,7 @@ header #hero article:last-of-type {
 }
 #industries ul {
   border-radius: 2rem;
-  border-bottom-left-radius: 0.2rem;
+  border-bottom-right-radius: 0.2rem;
   padding: 4rem 2rem 4rem 3rem;
   background-color: #142033;
   border: solid #1E304D 1px;
@@ -646,7 +650,7 @@ header #hero article:last-of-type {
 }
 #industries .jumbo {
   border-radius: 2rem;
-  border-bottom-left-radius: 0.2rem;
+  border-bottom-right-radius: 0.2rem;
   padding: 3em 2em;
   background-color: #E0E0DC;
   flex-direction: column;
@@ -701,7 +705,7 @@ header #hero article:last-of-type {
   align-items: center;
   justify-content: flex-start;
   height: 3.5em;
-  text-align: left;
+  text-align: right;
   font-size: 1.25rem;
   font-weight: 500;
   width: 100%;
@@ -731,7 +735,7 @@ header #hero article:last-of-type {
   align-items: center;
   justify-content: flex-start;
   height: 3.5em;
-  text-align: left;
+  text-align: right;
   font-size: 1.25rem;
   font-weight: 500;
   width: 100%;
@@ -761,7 +765,7 @@ header #hero article:last-of-type {
   align-items: center;
   justify-content: flex-start;
   height: 3.5em;
-  text-align: left;
+  text-align: right;
   font-size: 1.25rem;
   font-weight: 500;
   width: 100%;
@@ -791,7 +795,7 @@ header #hero article:last-of-type {
   align-items: center;
   justify-content: flex-start;
   height: 3.5em;
-  text-align: left;
+  text-align: right;
   font-size: 1.25rem;
   font-weight: 500;
   width: 100%;
@@ -843,7 +847,7 @@ header #hero article:last-of-type {
 }
 @media only screen and (min-width: 1024px) {
   #map {
-    padding-left: 6rem;
+    padding-right: 6rem;
   }
 }
 #map h2 {
@@ -867,7 +871,7 @@ header #hero article:last-of-type {
 @media only screen and (min-width: 1366px) {
   #map article.data {
     align-self: center;
-    padding-left: 6em;
+    padding-right: 6em;
   }
 }
 #map article ul {
@@ -882,12 +886,14 @@ header #hero article:last-of-type {
   position: relative;
 }
 #map article:last-of-type:before {
-  content: "\"A key part in Crown Prince Mohammed Bin Salman's Vision 2030, aims for tourism to be the second largest contributor to GDP after oil and gas by 2030\"";
+  content: '"يهدف جزء لا يتجزأ من رؤية 2030 لصاحب السمو الملكي ولي العهد الأمير محمد بن سلمان لجعل السياحة ثاني أكبر القطاعات المساهمة في الدخل المحلي بعد النفط والغاز بحلول عام 2030"';
+  direction: RTL;
+  text-align: start;
   display: block;
   position: absolute;
   font-size: 0.8rem;
   width: 40%;
-  right: 0;
+  left: 0;
   top: 10%;
   display: inline-block;
   padding: 0.5rem 1.1em 0.5em 1em;
@@ -895,11 +901,11 @@ header #hero article:last-of-type {
   border: none;
   outline: 0;
   font-weight: bold;
-  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
   padding: 2em;
   font-weight: 500;
   border-radius: 2.5em !important;
-  border-bottom-left-radius: 0.2em !important;
+  border-bottom-right-radius: 0.2em !important;
   background-color: #FAFAF5;
 }
 @media only screen and (min-width: 640px) {
@@ -971,7 +977,7 @@ header #hero article:last-of-type {
     justify-content: center;
     align-items: flex-start;
     margin-top: 0;
-    padding-right: 10em;
+    padding-left: 10em;
   }
 }
 #values > div:last-of-type h2 {
@@ -1068,10 +1074,10 @@ header #hero article:last-of-type {
   border: none;
   outline: 0;
   font-weight: bold;
-  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
   padding: 3em 2em !important;
   border-radius: 3em !important;
-  border-bottom-left-radius: 0.3em !important;
+  border-bottom-right-radius: 0.3em !important;
   width: 100%;
   z-index: 1;
   background: #1e304d;
@@ -1103,7 +1109,7 @@ header #hero article:last-of-type {
 }
 @media only screen and (min-width: 1024px) {
   #contact .boxed > div:first-of-type h4, #contact .boxed > div:first-of-type div {
-    text-align: left;
+    text-align: right;
   }
 }
 #contact .boxed form {
@@ -1131,12 +1137,12 @@ header #hero article:last-of-type {
     width: 50%;
   }
   #contact .boxed form .inputs div:first-of-type {
-    padding-right: 2em;
+    padding-left: 2em;
   }
 }
 #contact .boxed form .inputs div input {
   margin: 0.6rem 0;
-  padding-left: 1.2em;
+  padding-right: 1.2em;
   width: 100%;
 }
 #contact .boxed form .inputs div input:first-of-type {
@@ -1209,7 +1215,7 @@ header #hero article:last-of-type {
   height: 1.3em;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-left: 0.6em;
+  margin-right: 0.6em;
 }
 #contact .boxed > div div a.fa.fa-twitter {
   background-image: url("../assets/images/fa.twitter.svg");
