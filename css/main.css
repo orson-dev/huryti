@@ -495,7 +495,7 @@ header #hero article:last-of-type {
     padding: 3em 0 0 0;
   }
 }
-#intro article.image {
+#intro article .image {
   max-height: 40vh;
 }
 #intro article:nth-of-type(2) {
