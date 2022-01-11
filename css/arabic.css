@@ -237,11 +237,12 @@ header nav {
   align-items: center;
 }
 header nav #logo {
-  background-image: url("../assets/images/logo.dark.svg");
+  background-image: url("../assets/images/logo.right.dark.svg");
   display: block;
   width: 112px;
   height: 63px;
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 header #options a.basic {
   display: inline-block;
@@ -960,9 +961,7 @@ header #hero article:last-of-type {
     width: 60%;
     background-size: contain;
     background-position: right top;
-
     background-image: url("../assets/images/bg.blue.right.png");
-
   }
 }
 #values > div:last-of-type {
@@ -1062,11 +1061,58 @@ header #hero article:last-of-type {
 
 #contact {
   padding: 8em 2em;
-  max-width: 1064px;
+}
+@media only screen and (min-width: 1366px) {
+  #contact.container {
+    background-image: url("../assets/images/bg.flightpath.svg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    position: relative;
+    background-size: contain;
+  }
+}
+@media only screen and (min-width: 1920px) {
+  #contact.container {
+    background-size: auto;
+  }
+}
+#contact.container:after {
+  content: "";
+  display: none;
+  width: 8em;
+  height: 6em;
+  position: absolute;
+  right: 5%;
+  top: 36%;
+  background-image: url("../assets/images/plane.svg");
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: contain;
+}
+@media only screen and (min-width: 1366px) {
+  #contact.container:after {
+    display: block;
+  }
+}
+@media only screen and (min-width: 1920px) {
+  #contact.container:after {
+    right: 11%;
+    top: 29%;
+  }
 }
 @media only screen and (min-width: 1024px) {
   #contact {
-    padding: 8em 0;
+    padding: 8em 2em;
+  }
+}
+@media only screen and (min-width: 1366px) {
+  #contact {
+    padding: 8em 6em;
+  }
+}
+@media only screen and (min-width: 1920px) {
+  #contact {
+    padding: 8em 15em;
   }
 }
 #contact h4 {
@@ -1247,11 +1293,12 @@ footer {
   background-color: #142033;
 }
 footer .logo {
-  background-image: url("../assets/images/logo.light.svg");
+  background-image: url("../assets/images/logo.right.light.svg");
   display: inline-block;
   width: 112px;
   height: 63px;
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   margin: 1em auto;
 }
 footer div {
