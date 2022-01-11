@@ -949,7 +949,7 @@ header #hero article:last-of-type {
   #values > div:first-of-type {
     width: 60%;
     background-size: contain;
-    background-position: top right;
+    background-position: left top;
   }
 }
 #values > div:last-of-type {
