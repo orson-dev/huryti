@@ -991,6 +991,7 @@ header #hero article:last-of-type {
 #values > div:last-of-type h2 {
   color: #FAFAF5;
   font-size: 3.1rem;
+  padding-bottom: 0.8em;
 }
 #values > div:last-of-type ul {
   margin-top: 1.5em;

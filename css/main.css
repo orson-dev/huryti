@@ -421,7 +421,7 @@ header #hero article:first-of-type {
 }
 @media only screen and (min-width: 1366px) {
   header #hero article:first-of-type {
-    padding-left: 5em;
+    padding-left: 3em;
     align-self: center;
   }
 }
@@ -985,6 +985,7 @@ header #hero article:last-of-type {
 #values > div:last-of-type h2 {
   color: #FAFAF5;
   font-size: 3.1rem;
+  padding-bottom: 0.8em;
 }
 #values > div:last-of-type ul {
   margin-top: 1.5em;
