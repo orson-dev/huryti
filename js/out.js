@@ -17270,8 +17270,8 @@ document.addEventListener("DOMContentLoaded", function () {
         el.classList.remove('active');
       });
       el.classList.add('active');
-      var href = this.href.split("/");
-      href = href[href.length - 1];
+      var href = this.href.split("#");
+      href = "#" + href[href.length - 1];
       console.log(href);
       document.querySelectorAll('.tabs ul').forEach(function (el) {
         console.log(el);
