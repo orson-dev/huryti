@@ -150,7 +150,7 @@ button.btn {
   font-weight: bold;
   border-bottom-right-radius: 0 !important;
   background-color: #2E9942;
-  color: #FAFAF5;
+  color: #fafaf5;
   text-align: center;
   display: flex;
   align-items: center;
@@ -171,7 +171,7 @@ button.btn {
   border: none;
   font-size: 1rem;
   padding: 0.5em 0.5em;
-  background-color: #FAFAF5;
+  background-color: #fafaf5;
   color: #142033;
   text-align: left;
 }
@@ -181,7 +181,7 @@ button.btn {
   border: none;
   font-size: 1rem;
   padding: 0.5em 0.5em;
-  background-color: #FAFAF5;
+  background-color: #fafaf5;
   color: #142033;
   text-align: left;
 }
@@ -192,7 +192,7 @@ p strong {
 
 ul li {
   font-weight: normal;
-  color: #FAFAF5;
+  color: #fafaf5;
   padding-bottom: 1em;
   display: flex;
   align-items: flex-start;
@@ -223,6 +223,18 @@ ul li::before {
   opacity: 1;
 }
 
+span.info-msg {
+  display: block;
+  text-align: end !important;
+  padding-left: 2em;
+}
+span.info-msg.done {
+  color: #2E9942;
+}
+span.info-msg.failed {
+  color: #ec7357;
+}
+
 header {
   min-height: 100vh;
   width: 100%;
@@ -237,11 +249,12 @@ header nav {
   align-items: center;
 }
 header nav #logo {
-  background-image: url("../assets/images/logo.dark.svg");
+  background-image: url("../assets/images/logo.right.dark.svg");
   display: block;
   width: 112px;
   height: 63px;
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 header #options a.basic {
   display: inline-block;
@@ -277,7 +290,7 @@ header #options a.btn:after {
   outline: 0;
   font-weight: bold;
   border-bottom-right-radius: 0 !important;
-  color: #FAFAF5;
+  color: #fafaf5;
 }
 @media only screen and (min-width: 1024px) {
   header #options a.btn:after {
@@ -404,12 +417,12 @@ header #hero article:last-child {
 header #hero article h1 {
   font-weight: bold;
   font-family: "El Messiri", sans-serif;
-  color: #FAFAF5;
+  color: #fafaf5;
 }
 header #hero article p {
   font-weight: normal;
   font-size: 1rem;
-  color: #FAFAF5;
+  color: #fafaf5;
   line-height: 1.3em;
   padding: 1em 0 2em 0;
 }
@@ -543,7 +556,7 @@ header #hero article:last-of-type {
   background-position: center center;
 }
 #intro article div.info {
-  color: #FAFAF5;
+  color: #fafaf5;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -622,13 +635,13 @@ header #hero article:last-of-type {
   transition: transform 300ms ease;
 }
 #industries a.tab.active {
-  color: #FAFAF5;
+  color: #fafaf5;
 }
 #industries a.tab.active:after {
   transform: scaleX(1);
 }
 #industries a.tab:hover {
-  color: #FAFAF5;
+  color: #fafaf5;
   transition: all 300ms ease;
 }
 #industries ul {
@@ -857,7 +870,7 @@ header #hero article:last-of-type {
   }
 }
 #map h2 {
-  color: #FAFAF5;
+  color: #fafaf5;
 }
 #map article {
   width: 100%;
@@ -912,7 +925,7 @@ header #hero article:last-of-type {
   font-weight: 500;
   border-radius: 2.5em !important;
   border-bottom-right-radius: 0.2em !important;
-  background-color: #FAFAF5;
+  background-color: #fafaf5;
 }
 @media only screen and (min-width: 640px) {
   #map article:last-of-type:before {
@@ -988,8 +1001,9 @@ header #hero article:last-of-type {
   }
 }
 #values > div:last-of-type h2 {
-  color: #FAFAF5;
+  color: #fafaf5;
   font-size: 3.1rem;
+  padding-bottom: 0.8em;
 }
 #values > div:last-of-type ul {
   margin-top: 1.5em;
@@ -1060,11 +1074,58 @@ header #hero article:last-of-type {
 
 #contact {
   padding: 8em 2em;
-  max-width: 1064px;
+}
+@media only screen and (min-width: 1366px) {
+  #contact.container {
+    background-image: url("../assets/images/bg.flightpath.svg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    position: relative;
+    background-size: contain;
+  }
+}
+@media only screen and (min-width: 1920px) {
+  #contact.container {
+    background-size: auto;
+  }
+}
+#contact.container:after {
+  content: "";
+  display: none;
+  width: 8em;
+  height: 6em;
+  position: absolute;
+  right: 5%;
+  top: 36%;
+  background-image: url("../assets/images/plane.svg");
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: contain;
+}
+@media only screen and (min-width: 1366px) {
+  #contact.container:after {
+    display: block;
+  }
+}
+@media only screen and (min-width: 1920px) {
+  #contact.container:after {
+    right: 11%;
+    top: 29%;
+  }
 }
 @media only screen and (min-width: 1024px) {
   #contact {
-    padding: 8em 0;
+    padding: 8em 2em;
+  }
+}
+@media only screen and (min-width: 1366px) {
+  #contact {
+    padding: 8em 6em;
+  }
+}
+@media only screen and (min-width: 1920px) {
+  #contact {
+    padding: 8em 15em;
   }
 }
 #contact h4 {
@@ -1245,11 +1306,12 @@ footer {
   background-color: #142033;
 }
 footer .logo {
-  background-image: url("../assets/images/logo.light.svg");
+  background-image: url("../assets/images/logo.right.light.svg");
   display: inline-block;
   width: 112px;
   height: 63px;
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   margin: 1em auto;
 }
 footer div {

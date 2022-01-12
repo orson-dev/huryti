@@ -17693,7 +17693,121 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+var clearMessage = function clearMessage(which, msg) {
+  console.log(which, msg);
+  which.parentNode.insertBefore(msg, which.nextElementSibling);
+  var timer = setTimeout(function () {
+    document.querySelectorAll('.info-msg').forEach(function (el) {
+      el.parentNode.removeChild(el);
+    });
+  }, 3000);
+};
+
+var validateEmail = function validateEmail(email) {
+  return String(email).toLowerCase().match(/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/);
+};
+
 document.addEventListener("DOMContentLoaded", function () {
+  var server = "https://node.huryti.com";
+  document.querySelector("#hero form").addEventListener("submit", function (event) {
+    var _this = this;
+
+    event.preventDefault();
+    var msgSpan = document.createElement('span');
+    msgSpan.classList.add('info-msg');
+
+    if (validateEmail(this.subscribe.value)) {
+      fetch(server + "/register", {
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json'
+        },
+        method: "post",
+        body: JSON.stringify({
+          email: this.subscribe.value
+        })
+      }).then(function (res) {
+        return res.json();
+      }).then(function (data) {
+        msgSpan.classList.add('done');
+        msgSpan.innerText = 'Success';
+        _this.subscribe.value = '';
+        clearMessage(_this, msgSpan);
+      })["catch"](function (err) {
+        msgSpan.classList.add('failed');
+        msgSpan.innerText = 'communication error';
+        clearMessage(_this, msgSpan);
+      });
+    } else {
+      msgSpan.classList.add('failed');
+      console.log(msgSpan);
+      msgSpan.innerText = 'Invalid email';
+      clearMessage(this, msgSpan);
+    }
+  });
+  document.querySelector("#contact form").addEventListener("submit", function (event) {
+    var _this2 = this;
+
+    event.preventDefault();
+    console.log("fetching");
+    var _this$elements = this.elements,
+        name = _this$elements.name,
+        phone = _this$elements.phone,
+        email = _this$elements.email,
+        message = _this$elements.message;
+    var info = {};
+    [name, phone, email, message].forEach(function (el) {
+      info[el.name] = el.value;
+    });
+    var errs = [];
+
+    if (!validateEmail(email.value)) {
+      errs.push('email');
+    }
+
+    if (name.value.length < 4) {
+      errs.push('name');
+    }
+
+    if (phone.value.length < 4) {
+      errs.push('phone');
+    }
+
+    if (message.value.length < 4) {
+      errs.push('message');
+    }
+
+    console.log(errs);
+    var msgSpan = document.createElement('span');
+    msgSpan.classList.add('info-msg');
+
+    if (errs.length) {
+      msgSpan.classList.add('failed');
+      msgSpan.innerText = "Errors: " + errs.join(", ");
+      clearMessage(this, msgSpan);
+    } else {
+      fetch(server + "/contact", {
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json'
+        },
+        method: "post",
+        body: JSON.stringify(info)
+      }).then(function (res) {
+        return res.json();
+      }).then(function (data) {
+        msgSpan.classList.add('done');
+        msgSpan.innerText = "Success";
+        clearMessage(_this2, msgSpan);
+      })["catch"](function (err) {
+        msgSpan.classList.add('danger');
+        msgSpan.innerText = "Communication error";
+        clearMessage(_this2, msgSpan);
+        console.log(err);
+      });
+    }
+  });
   var mac = /(Mac|iPhone|iPod|iPad|Linux)/i.test(navigator.platform);
 
   if (mac) {
@@ -17728,12 +17842,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
   console.log(scroll);
-  document.querySelectorAll("form").forEach(function (el) {
-    console.log(el);
-    el.addEventListener("submit", function (event) {
-      event.preventDefault();
-    });
-  });
   var animationData = document.body.dataset.lang === "english" ? _animations__WEBPACK_IMPORTED_MODULE_0__.english : _animations__WEBPACK_IMPORTED_MODULE_0__.arabic;
   var params = [{
     container: document.querySelectorAll('.image')[0],
